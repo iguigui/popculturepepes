@@ -1,0 +1,344 @@
+/*@font-face {
+  font-family: 'fontello';
+  src: url('./fonts/fontello.eot?64734751');
+  src: url('./fonts/fontello.eot?64734751#iefix') format('embedded-opentype'),
+       url('./fonts/fontello.woff?64734751') format('woff'),
+       url('./fonts/fontello.ttf?64734751') format('truetype'),
+       url('./fonts/fontello.svg?64734751#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+.App,
+.ui.header {
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+a[disabled],
+a.disabled {
+  color: gray;
+  cursor: auto;
+}
+
+h1.ui.header {
+  font-size: 45px;
+}
+h2.ui.header {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+h3.ui.header {
+  font-size: 20px;
+}
+section {
+  min-height: 250px;
+  padding-top: 100px;
+}
+.text {
+  width: 600px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.ui.button.primary {
+  background-color: #02b6d0;
+  border: 1px solid white;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+  font-weight: 700;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5), 1px 1px rgba(255, 255, 255, 0.5);
+}
+.ui.button.primary:hover {
+  background-color: #02c6e4 !important;
+  background: #02c6e4 !important;
+  transition: 0.3s;
+}
+
+.mint-button {
+}
+/***** TOP MENU ******/
+.ui.secondary.menu {
+  height: 80px;
+}
+.ui.secondary.menu,
+.ui.secondary.menu .item {
+  color: white;
+  transition: 0.25s;
+}
+.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .link.item:hover,
+.ui.secondary.menu a.item:hover {
+  background: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.25s;
+}
+.ui.secondary.menu .logo {
+  padding-left: 0;
+  padding-top: 30px;
+}
+.ui.secondary.menu .logo img {
+  width: 200px;
+  height: 63px;
+  display: inline-block;
+  object-fit: cover;
+}
+.ui.secondary.menu .ui.button.connect {
+  background-color: white;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 10px;
+  transition: 0.25s;
+  margin-right: 30px;
+}
+.ui.button.connect:hover {
+  opacity: 70%;
+  transition: 0.25s;
+}
+.ui.menu .item > i.icon {
+  font-size: 24px;
+}
+.ui.menu .item.social {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.ui.secondary.menu .right.menu {
+  align-items: center;
+}
+
+/****** TOP BANNER ******/
+.topbanner {
+  height: 100vh;
+  object-fit: cover;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: none;
+  padding-top: 0;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.5), 1px 1px rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 1);
+}
+
+.topbanner,
+.topbanner .ui.header {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-weight: 500;
+}
+
+.topbanner h1.ui.header {
+  margin-top: 40px;
+}
+
+/****** PRINTS IMAGE CARDS ******/
+.prints {
+  text-align: left;
+}
+.prints:last-child h2.ui.header {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+ul.images {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+li.photocard {
+  height: 40vh;
+  flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 10px 10px;
+  position: relative;
+  transition: 0.25s;
+}
+
+li.photocard:hover {
+  box-shadow: 0px 3px 13px rgb(0 0 0 / 55%);
+  transition: 0.25s;
+}
+
+.photocard img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.photocard .quantity {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  color: white;
+  /*  right: 5px;
+  bottom: 10px;
+  padding:5px 5px;
+  background-color:rgba(0,0,0,0.3);*/
+}
+
+.photocard .price {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
+}
+
+/****** FOOTER ******/
+.footer {
+  margin-top: 300px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: rgba(255, 255, 255, 15%);
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  color: inherit;
+  height: 30px;
+  font-size: 16px;
+}
+.footer a:hover {
+  opacity: 70%;
+}
+
+.footer .social .icon {
+  font-size: 32px;
+  color: white;
+  margin: 15px;
+}
+
+audio {
+  margin-bottom: 40px;
+}
+
+/***** DARK MODE *****/
+.App.dark {
+  background: #000;
+  /*font-family: p22-underground-sc,'Quicksand',Verdana,Tahoma,"DejaVu Sans",sans-serif;*/
+  font-size: 16px;
+  color: white;
+}
+.dark .ui.header {
+  color: white;
+}
+.dark li.photocard:hover {
+  /*box-shadow: 0px 4px 17px rgb(255 255 255 / 50%)*/
+  opacity: 0.9;
+  padding: 5px;
+}
+
+.dark .links a {
+  color: white;
+}
+
+/***** SHOW PHOTO *****/
+.photopage {
+  text-align: left;
+}
+.photopage .photocontainer {
+  padding-right: 15px;
+}
+.photopage .photocontainer img {
+  width: 100%;
+  padding: 30px;
+  background: white;
+}
+
+.photopage .description {
+  margin-top: 50px;
+}
+.goback {
+  margin-top: 75px;
+  display: block;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .topbanner h1.ui.header {
+    margin-top: 150px;
+  }
+  .topbanner h2.ui.header {
+    margin-top: 50px !important;
+  }
+  .topbanner p.text,
+  .explain p.text {
+    width: 350px;
+  }
+  .explain video {
+    width: 350px;
+  }
+  .photocard .quantity {
+    right: auto;
+    left: 120px;
+  }
+  .ui.secondary.menu .logo {
+    display: none;
+  }
+  .button.connect {
+    position: absolute !important;
+    left: 10px;
+    top: 18px !important;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .box h3.ui.header {
+    margin-top: 40px;
+  }
+  #photo-modal .photo-head .goback {
+    position: absolute !important;
+    top: 195px !important;
+    right: 10px !important;
+    margin-top: auto;
+  }
+  .photo-head h2.ui.header {
+    font-size: 24px;
+  }
+  #photo-modal .photo-footer > * {
+    margin: 0 1em !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  li.photocard {
+    max-height: 40vh;
+  }
+  .photocard img {
+    max-width: 100%;
+    min-width: none;
+  }
+  video {
+    margin-top: -20px;
+  }
+  audio {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  section {
+    padding-top: 40px;
+  }
+  .prints:last-child h2.ui.header {
+    margin-top: 30px;
+  }
+}

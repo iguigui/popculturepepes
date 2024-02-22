@@ -1,0 +1,52 @@
+@media (max-width: 767px) {
+	.section-slider .slide {
+	padding: 50px 0px;
+}
+    .copyright, .social-icons, .footer-links, .create-event {
+        text-align: center;
+    }
+    .footer-dropdown .ui.selection.dropdown {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .footer-links .item {
+        margin-right: 0;
+        display: block;
+        line-height: 50px;
+    }
+    .slider-content h2 {
+	font-size: 36px;
+	line-height: 38px;
+	}
+	.slider-content .button {
+	width: 100%;
+	text-align: center;
+	position:absolute;
+	bottom:0px;
+}
+.slider-content {
+	min-height: 350px;
+	position:relative;
+}
+.section-slider .slick-dots li {
+	width: 25%;
+}
+.events-list .ui.card > .content {
+width:60%;
+float:left;
+}
+.events-list .ui.card > .image {
+width:40%;
+float:right;
+border-radius: 0.3rem;
+}
+.tag-label {
+	position: relative;
+}
+.events-list .ui.card {
+	display:block;
+}
+
+
+	  
+}
